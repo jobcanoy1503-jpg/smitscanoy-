@@ -13,7 +13,7 @@ lang: nl
 # Op GitHub Pages staat de site onder https://<gebruikersnaam>.github.io/<repository>/
 # Zet hier de naam van de repository, met een schuine streep ervoor.
 # Koppel je later een eigen domein (bijv. www.smitscanoy.nl)? Maak dit dan leeg: baseurl: ""
-baseurl: "/smitscanoy"
+baseurl: "/smitscanoy-"
 url: ""
 
 # Testversie: false = Google en andere zoekmachines nemen de site niet op,
