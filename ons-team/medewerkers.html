@@ -1,0 +1,37 @@
+---
+title: Medewerkers
+subtitel: Wij luisteren, wij zorgen – uw partners in gezondheid
+beschrijving: De huisartsen, assistentes, praktijkondersteuners en andere medewerkers van Huisartsenpraktijk Smits & Canoy.
+---
+<p>Dit zijn onze medewerkers. Wilt u weten wat elke functie inhoudt? Kijk dan bij <a href="/ons-team/">Ons team</a>.</p>
+
+<div class="team">
+  {%- for lid in site.data.team %}
+  {%- assign woorden = lid.naam | split: " " -%}
+  {%- assign initialen = woorden[0] | slice: 0 -%}
+  {%- for w in woorden offset: 1 -%}
+    {%- assign eerste = w | slice: 0 -%}
+    {%- assign hoofd = eerste | upcase -%}
+    {%- if eerste == hoofd and eerste != "-" -%}{%- assign initialen = initialen | append: eerste -%}{%- break -%}{%- endif -%}
+  {%- endfor %}
+  <div class="teamlid">
+    <div class="teamlid-foto">
+      {%- if lid.foto %}
+      <img src="/assets/img/team/{{ lid.foto }}" alt="Foto van {{ lid.naam }}" loading="lazy">
+      {%- else %}
+      <span aria-hidden="true">{{ initialen }}</span>
+      {%- endif %}
+    </div>
+    <h3>{{ lid.naam }}</h3>
+    <dl>
+      <dt>Functie:</dt> <dd>{{ lid.functie }}</dd>
+      {%- if lid.big %}
+      <dt>BIG-registratie:</dt> <dd>{{ lid.big }}</dd>
+      {%- endif %}
+      {%- if lid.aanwezig %}
+      <dt>Aanwezig:</dt> <dd>{{ lid.aanwezig }}</dd>
+      {%- endif %}
+    </dl>
+  </div>
+  {%- endfor %}
+</div>

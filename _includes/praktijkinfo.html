@@ -1,0 +1,44 @@
+{%- assign p = site.data.praktijk -%}
+<section class="praktijkinfo" aria-labelledby="praktijkinfo-titel">
+  <div class="praktijkinfo-boven">
+    <h2 id="praktijkinfo-titel">Praktijkinformatie</h2>
+    <p>Wij zijn onderdeel van <a href="{{ p.gezondheidscentrum.url }}" target="_blank" rel="noopener">{{ p.gezondheidscentrum.naam }}</a>. {{ p.belafspraken | join: " " }}</p>
+  </div>
+  <div class="praktijkinfo-onder">
+    <div class="praktijkinfo-kolom">
+      <h3>{{ p.naam }}</h3>
+      <p>
+        {{ p.adres.straat }}<br>
+        {{ p.adres.postcode_plaats }}<br>
+        <a href="tel:{{ p.telefoon_link }}">{{ p.telefoon }}</a>
+      </p>
+      <p class="knoppenrij">
+        <a class="knop knop--klein" href="/contact/">Neem contact op</a>
+        <a class="knop knop--klein knop--grijs" href="{{ p.adres.kaart }}" target="_blank" rel="noopener">Route</a>
+      </p>
+    </div>
+    <div class="praktijkinfo-kolom">
+      <h3>Openingstijden</h3>
+      <table class="tijden">
+        <tbody>
+          {%- for regel in p.openingstijden %}
+          <tr><th scope="row">{{ regel.dag }}</th><td>{{ regel.tijd }}</td></tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="praktijkinfo-kolom">
+      <h3>Belangrijke nummers</h3>
+      <dl class="nummers">
+        <dt>Info &amp; afspraak</dt>
+        <dd><a href="tel:{{ p.telefoon_link }}">{{ p.telefoon }}</a></dd>
+        <dt>Spoed</dt>
+        <dd><a href="tel:{{ p.spoed_link }}">{{ p.spoed_tekst }}</a></dd>
+        <dt>Avond, nacht en weekend</dt>
+        <dd><a href="tel:{{ p.huisartsenpost.telefoon_link }}">{{ p.huisartsenpost.telefoon }}</a><br>{{ p.huisartsenpost.naam }}</dd>
+        <dt>Levensbedreigend</dt>
+        <dd><a href="tel:112"><strong>112</strong></a></dd>
+      </dl>
+    </div>
+  </div>
+</section>

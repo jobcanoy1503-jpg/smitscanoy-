@@ -1,0 +1,67 @@
+---
+layout: default
+title: Welkom
+body_class: home
+hero: /assets/img/balie.jpg
+hero_positie: "50% 55%"
+---
+{%- assign p = site.data.praktijk -%}
+
+<div class="hero hero--home">
+  <img class="hero-beeld" src="{{ page.hero }}" alt="De balie van Huisartsenpraktijk Smits & Canoy" style="object-position: {{ page.hero_positie }}">
+  <div class="snelmenu">
+    <div class="snelmenu-item">
+      {% include iconen/contact.svg %}
+      <h2><a href="/contact/">Contact</a></h2>
+      <a class="knop knop--wit" href="/contact/">Neem contact op</a>
+    </div>
+    <div class="snelmenu-item">
+      {% include iconen/inschrijven.svg %}
+      <h2><a href="/formulieren/inschrijven/">Inschrijf&shy;formulier nieuwe patiënt</a></h2>
+      <a class="knop knop--wit" href="/formulieren/inschrijven/">Inschrijven</a>
+    </div>
+    <div class="snelmenu-item">
+      {% include iconen/herhaalrecept.svg %}
+      <h2><a href="/herhaalrecept/">Herhaalrecept</a></h2>
+      <a class="knop knop--wit" href="/herhaalrecept/">Herhaalrecept aanvragen</a>
+    </div>
+    <div class="snelmenu-item">
+      {% include iconen/portaal.svg %}
+      <h2><a href="/patientenportaal/">Patiënten&shy;portaal <span class="portaal-naam">MijnGezondheid.net</span></a></h2>
+      <a class="knop knop--wit" href="/patientenportaal/">Naar het portaal</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  {% include hulpmiddelen.html %}
+
+  <section class="intro" data-voorleestekst>
+    <h1>Welkom bij Huisartsenpraktijk Smits &amp; Canoy</h1>
+    <p class="subtitel">Professioneel, persoonlijk en met begrip voor uw wensen</p>
+    <div class="tekst">
+      <p>Van uw huisarts verwacht u oprechte betrokkenheid bij u en uw gezondheid. Professioneel, persoonlijk en met begrip voor uw wensen. Huisartsenpraktijk Smits &amp; Canoy is de spil in uw zorg. Ons deskundige team kijkt in overleg met u, zorgverleners en specialisten naar wat u nodig heeft. Samenwerking is onze kracht, net als meer aandacht voor de patiënt. Dat past bij de zorg van nu. Onze ervaring leert dat het werkt. Tevreden patiënten zijn het resultaat.</p>
+      <p><strong>Bent u op zoek naar een huisarts? Wij verwelkomen u graag!</strong></p>
+    </div>
+    <p><a class="knop" href="/formulieren/inschrijven/">Inschrijven als patiënt</a></p>
+  </section>
+
+  <section class="kader-gestippeld" aria-labelledby="voordat-u-belt">
+    <h2 id="voordat-u-belt">Lees dit voordat u belt</h2>
+    <p>Wij vragen u altijd eerst naar de praktijk te bellen voordat u naar de praktijk komt. De assistente vraagt naar de reden van uw contact. Ze doet dat om zo goed mogelijk een inschatting te maken van de aard en spoedeisendheid van uw klacht. De assistente is (net als de huisarts) verplicht om vertrouwelijk met uw informatie om te gaan.</p>
+    <p>Voordat u belt, adviseren wij u eerst eens te kijken op <a href="https://www.moetiknaardedokter.nl" target="_blank" rel="noopener">moetiknaardedokter.nl</a> en <a href="https://www.thuisarts.nl" target="_blank" rel="noopener">thuisarts.nl</a> voor meer informatie en/of te lezen wat u zelf (al) kunt doen. Ook kunt u via <a href="{{ p.portaal.url }}" target="_blank" rel="noopener">MijnGezondheid.net</a> een e-consult sturen.</p>
+    <p class="knoppenrij">
+      <a class="knop" href="https://www.thuisarts.nl" target="_blank" rel="noopener">Thuisarts.nl</a>
+      <a class="knop" href="https://www.moetiknaardedokter.nl" target="_blank" rel="noopener">Moetiknaardedokter.nl</a>
+    </p>
+  </section>
+
+  <section class="sectie nieuws" aria-labelledby="nieuws-titel">
+    <h2 class="sectie-titel" id="nieuws-titel">Ons laatste nieuws</h2>
+    <p class="sectie-subtitel">Lees hier onze recente berichten en mededelingen</p>
+    {% include nieuwslijst.html aantal=4 %}
+    <p class="rechts"><a class="knop" href="/nieuws/">Meer berichten lezen</a></p>
+  </section>
+
+  {% include faq.html titel="Veelgestelde vragen" alleen_home=true knop=true %}
+</div>

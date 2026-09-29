@@ -1,0 +1,193 @@
+---
+title: Inschrijfformulier
+subtitel: U bent van harte welkom in onze praktijk
+beschrijving: Inschrijven als nieuwe patiënt bij Huisartsenpraktijk Smits & Canoy in Hardinxveld-Giessendam.
+hero: /assets/img/bladeren.jpg
+hero_positie: "50% 40%"
+---
+<div class="geen-print">
+  <p>U bent van harte welkom in onze praktijk. Wij hebben ruimte voor nieuwe patiënten. U kunt zich inschrijven met onderstaand formulier, of aan de balie in onze praktijk.</p>
+
+  <div class="melding">
+    <p><strong>Zo werkt het:</strong></p>
+    <ol>
+      <li>Vul het formulier hieronder in. Velden met een <span class="verplicht">*</span> zijn verplicht.</li>
+      <li>Klik op <strong>Formulier printen</strong>. Wij controleren eerst of alle verplichte velden zijn ingevuld.</li>
+      <li>Kom het ondertekende formulier afgeven aan de balie. Neem uw <strong>legitimatiebewijs</strong> en <strong>verzekeringspas</strong> mee.</li>
+    </ol>
+    <p><strong>Het invullen van dit formulier betekent NIET dat u gelijk ingeschreven bent.</strong> Wij vragen u te komen legitimeren aan de balie in onze praktijk. Aan de balie kan zo nodig een kennismaking afgesproken worden. Dit mag u ook zelf aangeven als u dit wenst. Nadat u aan de balie bent geweest en eventueel een kennismaking heeft gehad met een van onze huisartsen, kunnen wij u definitief inschrijven.</p>
+    <p><strong>Let op:</strong> een ingevuld formulier is 4 weken geldig. Als u binnen 4 weken niet langs bent geweest aan de balie, dan vervalt uw aanmelding.</p>
+  </div>
+
+  <p class="knoppenrij">
+    <button class="knop knop--grijs" type="button" data-print-leeg>{% include icon.html naam="print" %} Leeg formulier printen (met de hand invullen)</button>
+  </p>
+  <p><small>Wat u hier invult, blijft alleen op uw eigen computer en wordt niet via internet verstuurd.</small></p>
+</div>
+
+<div class="alleen-print">
+  <p><strong>Huisartsenpraktijk Smits &amp; Canoy</strong> · Peulenstraat 130, 3371 AR Hardinxveld-Giessendam · 0184 – 61 22 68<br>
+  Lever dit formulier binnen 4 weken in aan de balie en neem uw legitimatiebewijs en verzekeringspas mee.</p>
+</div>
+
+<div class="formulier" aria-label="Inschrijfformulier">
+  <fieldset>
+    <legend>Persoonlijke gegevens</legend>
+    <div class="veld">
+      <span class="label">Geslacht <span class="verplicht">*</span></span>
+      <div class="keuzes">
+        <label><input type="radio" name="geslacht"> Man</label>
+        <label><input type="radio" name="geslacht"> Vrouw</label>
+        <label><input type="radio" name="geslacht"> Anders</label>
+      </div>
+    </div>
+    <div class="velden-2">
+      <div class="veld"><label for="i-achternaam">Achternaam <span class="verplicht">*</span></label><input id="i-achternaam" type="text" autocomplete="family-name"></div>
+      <div class="veld"><label for="i-voorletters">Voorletters</label><input id="i-voorletters" type="text"></div>
+      <div class="veld"><label for="i-roepnaam">Roepnaam <span class="verplicht">*</span></label><input id="i-roepnaam" type="text" autocomplete="given-name"></div>
+      <div class="veld"><label for="i-geboortedatum">Geboortedatum <span class="verplicht">*</span></label><input id="i-geboortedatum" type="text" placeholder="dd-mm-jjjj" autocomplete="bday"></div>
+      <div class="veld"><label for="i-geboorteplaats">Geboorteplaats</label><input id="i-geboorteplaats" type="text"></div>
+      <div class="veld"><label for="i-bsn">Burgerservicenummer (BSN) <span class="verplicht">*</span></label><input id="i-bsn" type="text" inputmode="numeric"></div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Adres en contact</legend>
+    <div class="velden-3">
+      <div class="veld"><label for="i-straat">Straatnaam <span class="verplicht">*</span></label><input id="i-straat" type="text" autocomplete="address-line1"></div>
+      <div class="veld"><label for="i-huisnummer">Huisnummer <span class="verplicht">*</span></label><input id="i-huisnummer" type="text"></div>
+      <div class="veld"><label for="i-postcode">Postcode <span class="verplicht">*</span></label><input id="i-postcode" type="text" autocomplete="postal-code"></div>
+    </div>
+    <div class="velden-2">
+      <div class="veld"><label for="i-woonplaats">Woonplaats <span class="verplicht">*</span></label><input id="i-woonplaats" type="text" autocomplete="address-level2"></div>
+      <div class="veld"><label for="i-telefoon">Telefoonnummer <span class="verplicht">*</span></label><input id="i-telefoon" type="tel" autocomplete="tel"></div>
+      <div class="veld"><label for="i-mobiel">Mobiel</label><input id="i-mobiel" type="tel"></div>
+      <div class="veld"><label for="i-email">E-mail <span class="verplicht">*</span></label><input id="i-email" type="email" autocomplete="email"></div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Verzekering en vorige huisarts</legend>
+    <div class="velden-2">
+      <div class="veld"><label for="i-verzekeraar">Naam zorgverzekeraar <span class="verplicht">*</span></label><input id="i-verzekeraar" type="text"></div>
+      <div class="veld"><label for="i-polis">Verzekeringsnummer <span class="verplicht">*</span></label><input id="i-polis" type="text"></div>
+      <div class="veld"><label for="i-vorige-huisarts">Naam vorige huisarts</label><input id="i-vorige-huisarts" type="text"></div>
+      <div class="veld"><label for="i-vorige-plaats">Plaats vorige huisarts</label><input id="i-vorige-plaats" type="text"></div>
+    </div>
+    <div class="veld" data-naam="Gezinsleden al ingeschreven bij onze praktijk">
+      <span class="label">Zijn er al gezinsleden ingeschreven bij onze praktijk? <span class="verplicht">*</span></span>
+      <div class="keuzes"><label><input type="radio" name="gezin"> Ja</label><label><input type="radio" name="gezin"> Nee</label></div>
+    </div>
+    <div class="velden-2">
+      <div class="veld"><label for="i-gezin-naam">Zo ja: naam</label><input id="i-gezin-naam" type="text"></div>
+      <div class="veld"><label for="i-gezin-plaats">Zo ja: plaats</label><input id="i-gezin-plaats" type="text"></div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Medische gegevens</legend>
+    <div class="veld" data-naam="Overgevoeligheid voor geneesmiddelen of hulpstoffen">
+      <span class="label">Bent u overgevoelig voor of bekend met bijwerkingen van geneesmiddelen of hulpstoffen (bijv. penicilline, lactose)? <span class="verplicht">*</span></span>
+      <div class="keuzes"><label><input type="radio" name="allergie"> Ja</label><label><input type="radio" name="allergie"> Nee</label></div>
+    </div>
+    <div class="veld"><label for="i-allergie">Zo ja: voor welke geneesmiddelen en/of hulpstoffen, en wat zijn de bijwerkingen?</label><textarea id="i-allergie"></textarea></div>
+
+    <div class="veld">
+      <span class="label">Gebruikt u medicijnen? <span class="verplicht">*</span></span>
+      <div class="keuzes"><label><input type="radio" name="medicijnen"> Ja</label><label><input type="radio" name="medicijnen"> Nee</label></div>
+    </div>
+    <div class="veld"><label for="i-medicijnen">Zo ja: welke medicijnen gebruikt u?</label><textarea id="i-medicijnen"></textarea></div>
+
+    <div class="veld">
+      <span class="label">Heeft u een of meer van de volgende chronische ziekten?</span>
+      <div class="keuzes">
+        <label><input type="checkbox"> Suikerziekte</label>
+        <label><input type="checkbox"> Hart- en vaatziekten</label>
+        <label><input type="checkbox"> Hoge bloeddruk</label>
+        <label><input type="checkbox"> Nierziekte</label>
+        <label><input type="checkbox"> Astma of COPD</label>
+        <label><input type="checkbox"> Epilepsie</label>
+        <label><input type="checkbox"> Schildklieraandoening</label>
+        <label><input type="checkbox"> Psychiatrische aandoening</label>
+        <label><input type="checkbox"> Anders</label>
+      </div>
+    </div>
+    <div class="veld"><label for="i-ziekten">Andere ziekte(n)</label><input id="i-ziekten" type="text"></div>
+
+    <div class="velden-2">
+      <div class="veld">
+        <span class="label">Krijgt u een griepvaccinatie?</span>
+        <div class="keuzes"><label><input type="radio" name="griep"> Ja</label><label><input type="radio" name="griep"> Nee</label></div>
+      </div>
+      <div class="veld"><label for="i-griep">Waarom?</label><input id="i-griep" type="text"></div>
+      <div class="veld">
+        <span class="label">Bent u onder behandeling van een specialist?</span>
+        <div class="keuzes"><label><input type="radio" name="specialist"> Ja</label><label><input type="radio" name="specialist"> Nee</label></div>
+      </div>
+      <div class="veld"><label for="i-specialist">Bij wie / welk ziekenhuis?</label><input id="i-specialist" type="text"></div>
+      <div class="veld">
+        <span class="label">Bent u wel eens geopereerd?</span>
+        <div class="keuzes"><label><input type="radio" name="operatie"> Ja</label><label><input type="radio" name="operatie"> Nee</label></div>
+      </div>
+      <div class="veld"><label for="i-operatie">Waaraan en wanneer?</label><input id="i-operatie" type="text"></div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Leefstijl</legend>
+    <div class="velden-3">
+      <div class="veld"><span class="label">Rookt u?</span><div class="keuzes"><label><input type="radio" name="roken"> Ja</label><label><input type="radio" name="roken"> Nee</label></div></div>
+      <div class="veld"><span class="label">Gebruikt u alcohol?</span><div class="keuzes"><label><input type="radio" name="alcohol"> Ja</label><label><input type="radio" name="alcohol"> Nee</label></div></div>
+      <div class="veld"><span class="label">Gebruikt u drugs?</span><div class="keuzes"><label><input type="radio" name="drugs"> Ja</label><label><input type="radio" name="drugs"> Nee</label></div></div>
+    </div>
+    <div class="veld"><label for="i-drugs">Zo ja: welke drugs?</label><input id="i-drugs" type="text"></div>
+    <div class="veld"><label for="i-onderwerpen">Zijn er onderwerpen waarvan u vindt dat de huisarts ervan op de hoogte moet zijn?</label><textarea id="i-onderwerpen"></textarea></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Kinderen</legend>
+    <div class="veld">
+      <span class="label">Wilt u minderjarige kinderen (jonger dan 16 jaar) mee inschrijven?</span>
+      <div class="keuzes"><label><input type="radio" name="kinderen"> Ja</label><label><input type="radio" name="kinderen"> Nee</label></div>
+    </div>
+    <div class="veld"><label for="i-kinderen">Zo ja: naam, geboortedatum, BSN en eventuele opmerkingen per kind</label><textarea id="i-kinderen" style="min-height:130px"></textarea></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Toestemming</legend>
+    <div class="veld" data-naam="Toestemming Landelijk Schakelpunt">
+      <span class="label">Geeft u toestemming om uw medische gegevens en die van eventuele minderjarige gezinsleden beschikbaar te stellen voor uitwisseling met uw andere zorgverleners via het Landelijk Schakelpunt? (<a href="/formulieren/ik-geef-toestemming/">meer informatie</a>) <span class="verplicht">*</span></span>
+      <div class="keuzes">
+        <label><input type="radio" name="lsp"> Ja, ik geef toestemming</label>
+        <label><input type="radio" name="lsp"> Nee, ik geef geen toestemming</label>
+        <label><input type="radio" name="lsp"> Ik weet het nog niet</label>
+      </div>
+    </div>
+    <div class="veld" data-naam="Toestemming gegevens opvragen bij vorige huisarts">
+      <span class="label">Om de juiste zorg te kunnen verlenen, moeten wij uw gegevens bij uw vorige huisarts opvragen. <span class="verplicht">*</span></span>
+      <div class="keuzes">
+        <label><input type="radio" name="dossier"> Ik geef hiervoor toestemming</label>
+        <label><input type="radio" name="dossier"> N.v.t., ik heb geen eerdere huisarts</label>
+      </div>
+    </div>
+    <div class="velden-2">
+      <div class="veld"><label for="i-datum">Datum</label><input id="i-datum" type="text" placeholder="dd-mm-jjjj"></div>
+      <div class="veld"><label for="i-handtekening">Handtekening</label><input id="i-handtekening" type="text" style="height:60px"></div>
+    </div>
+  </fieldset>
+</div>
+
+<p class="knoppenrij geen-print">
+  <button class="knop" type="button" data-print-controle>{% include icon.html naam="print" %} Formulier printen</button>
+</p>
+
+<dialog class="dialoog" id="print-controle" aria-labelledby="print-controle-titel">
+  <form method="dialog">
+    <h2 id="print-controle-titel">Heeft u alles goed ingevuld?</h2>
+    <p>Alle verplichte velden zijn ingevuld. Controleer voordat u print nog even of uw gegevens kloppen, vooral uw <strong>naam</strong>, <strong>geboortedatum</strong>, <strong>BSN</strong> en <strong>verzekeringsnummer</strong>. Een foutje kan uw inschrijving vertragen.</p>
+    <p class="knoppenrij">
+      <button class="knop" value="printen">{% include icon.html naam="print" %} Ja, alles klopt: printen</button>
+      <button class="knop knop--grijs" value="terug">Nee, ik controleer het nog</button>
+    </p>
+  </form>
+</dialog>

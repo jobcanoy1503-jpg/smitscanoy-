@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------
+# Medewerkers (pagina Ons team > Medewerkers)
+# ---------------------------------------------------------------
+# foto: optioneel. Zet een foto in assets/img/team/ en vul hier de
+#       bestandsnaam in, bijv. foto: sacha-smits.jpg
+#       Zonder foto verschijnt een cirkel met de initialen.
+
+- naam: Sacha Smits
+  foto: sacha-smits.jpg
+  functie: Huisarts en praktijkhouder
+  big: "69048030901"
+  aanwezig: maandag, woensdag en donderdag
+
+- naam: Janine Canoy - Schoorl
+  foto: janine-canoy.jpg
+  functie: Huisarts en praktijkhouder
+  big: "39047494401"
+  aanwezig: dinsdag, donderdag en vrijdag
+
+- naam: Esther Schepper
+  foto: esther-schepper.jpg
+  functie: Huisarts
+  big: "29047882901"
+  aanwezig: maandag en donderdag
+
+- naam: Petra Meerkerk
+  foto: petra-meerkerk.jpg
+  functie: Huisarts
+  big: "39921810301"
+  aanwezig: woensdag
+
+- naam: Ria Kortlever
+  foto: ria-kortlever.jpg
+  functie: Huisarts
+  big: "39925187801"
+  aanwezig: dinsdag en vrijdag
+
+- naam: Sophie Schoevaars
+  foto: sophie-schoevaars.jpg
+  functie: Huisarts
+
+- naam: Daan Baten
+  functie: AIOS (huisarts in opleiding)
+  aanwezig: maandag, dinsdag en vrijdag
+
+- naam: Natasja Korthof
+  foto: natasja-korthof.jpg
+  functie: POH-S
+  aanwezig: donderdag
+
+- naam: Debora den Dunnen
+  foto: debora-den-dunnen.jpg
+  functie: Leerling-POH
+  big: "59916028330"
+  aanwezig: dinsdag en donderdag
+
+- naam: Therese Zoeteman
+  foto: therese-zoeteman.jpg
+  functie: POH-S
+  big: "09929218130"
+  aanwezig: maandag en donderdag
+
+- naam: Arma van Dijk - Niessen
+  foto: arma-van-dijk.jpg
+  functie: Doktersassistente
+  aanwezig: maandag, dinsdag en woensdag
+
+- naam: Agnes Boom
+  foto: agnes-boom.jpg
+  functie: Doktersassistente
+  aanwezig: dinsdag, donderdag en vrijdag
+
+- naam: Lise Mudde
+  foto: lise-mudde.jpg
+  functie: Doktersassistente
+  aanwezig: maandag, dinsdag, woensdag, donderdag en vrijdag
+
+- naam: Tim Schenau
+  foto: tim-schenau.jpg
+  functie: Praktijkondersteuner GGZ
+  big: "79917200330"
+  aanwezig: Afwezig
+
+- naam: Irina Suanet
+  foto: irina-suanet.jpg
+  functie: Praktijkondersteuner GGZ
+  aanwezig: dinsdag en woensdagochtend
+
+- naam: Marion Vogel
+  foto: marion-vogel.jpg
+  functie: Praktijkmanager
+  aanwezig: afwisselend dinsdag/woensdag en donderdag
+
+- naam: Marina Lingbeek
+  foto: marina-lingbeek.jpg
+  functie: Financieel administratief medewerkster
+  aanwezig: dinsdag en donderdag
+
+- naam: Tessa Klop
+  foto: tessa-klop.jpg
+  functie: Diëtiste (Dietheek)
+  aanwezig: donderdagmiddag
+
+- naam: Karel Ferenc en Alena Ferencova
+  foto: credo-clean.jpg
+  functie: Schoonmaakteam (Credo Clean)
+  aanwezig: dinsdag- en donderdagochtend

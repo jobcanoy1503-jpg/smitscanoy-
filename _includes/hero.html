@@ -1,0 +1,17 @@
+{%- comment -%}
+  Grote foto bovenaan een pagina. Stel per pagina in via de front matter:
+    hero: /assets/img/balie.jpg     (eigen foto)
+    hero: plaatshouder               (nette groene plaatshouder)
+    hero: false                      (geen foto)
+    hero_positie: "50% 30%"          (welk deel van de foto zichtbaar is)
+{%- endcomment -%}
+{%- assign hero = page.hero | default: include.beeld | default: "/assets/img/balie.jpg" -%}
+{%- if page.hero != false -%}
+<div class="hero{% if include.home %} hero--home{% endif %}">
+  {%- if hero == "plaatshouder" %}
+  <div class="hero-beeld hero-beeld--plaatshouder" role="img" aria-label="Foto volgt"></div>
+  {%- else %}
+  <img class="hero-beeld" src="{{ hero }}" alt="" style="object-position: {{ page.hero_positie | default: '50% 45%' }}">
+  {%- endif %}
+</div>
+{%- endif -%}

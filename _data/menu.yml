@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------
+# Hoofdmenu
+# ---------------------------------------------------------------
+# - titel: tekst op de knop
+#   url:   adres van de pagina (begint en eindigt met /)
+#   extern: true  -> opent een andere website in een nieuw tabblad
+#   sub:   lijst met pagina's in het uitklapmenu
+
+- titel: Ons team
+  url: /ons-team/
+  sub:
+    - titel: Werken als team
+      url: /ons-team/werken-als-team/
+    - titel: Medewerkers
+      url: /ons-team/medewerkers/
+    - titel: De huisarts
+      url: /ons-team/de-huisarts/
+    - titel: De doktersassistente
+      url: /ons-team/de-doktersassistente/
+    - titel: De Spreekuur Ondersteuner Huisarts (SOH)
+      url: /ons-team/spreekuur-ondersteuner-huisarts/
+    - titel: De Praktijkondersteuner-Somatiek (POH-S)
+      url: /ons-team/praktijkondersteuner-somatiek/
+    - titel: De Praktijkondersteuner-GGZ (POH-GGZ)
+      url: /ons-team/praktijkondersteuner-ggz/
+    - titel: De praktijkmanager
+      url: /ons-team/de-praktijkmanager/
+
+- titel: Formulieren
+  url: /formulieren/
+  sub:
+    - titel: Inschrijfformulier
+      url: /formulieren/inschrijven/
+    - titel: Vier Dimensionale Klachtenlijst (4DKL)
+      url: /formulieren/4dkl/
+    - titel: Bloedsuiker doorgeven
+      url: /formulieren/bloedsuiker-doorgeven/
+    - titel: Klachtenregeling
+      url: /formulieren/klachtenregeling/
+    - titel: Ik geef toestemming
+      url: /formulieren/ik-geef-toestemming/
+    - titel: Medische verklaring van de huisarts
+      url: /formulieren/medische-verklaring/
+
+- titel: Handige info
+  url: /handige-info/
+  sub:
+    - titel: Veelgestelde vragen
+      url: /handige-info/veelgestelde-vragen/
+    - titel: Huisartsenpost
+      url: /handige-info/huisartsenpost/
+    - titel: Stoppen met roken
+      url: /handige-info/stoppen-met-roken/
+    - titel: Rijbewijskeuringen
+      url: /handige-info/rijbewijskeuringen/
+    - titel: Reisvaccinatie
+      url: /handige-info/reisvaccinatie/
+    - titel: Verloskunde
+      url: /handige-info/verloskunde/
+    - titel: Gezondheidsinformatie
+      url: /handige-info/gezondheidsinformatie/
+    - titel: Zelftests
+      url: /handige-info/zelftests/
+    - titel: NIVEL zorgregistraties eerste lijn
+      url: /handige-info/nivel-zorgregistraties/
+    - titel: Privacywet (AVG)
+      url: /handige-info/privacywet-avg/
+    - titel: Verdere links
+      url: /handige-info/verdere-links/
+
+- titel: Herhaalrecept
+  url: /herhaalrecept/
+
+- titel: MijnGezondheid.net
+  url: /patientenportaal/
+
+- titel: Nieuws
+  url: /nieuws/
+
+- titel: Contact
+  url: /contact/
+  sub:
+    - titel: Contact en adres
+      url: /contact/
+    - titel: Spoed en huisartsenpost
+      url: /handige-info/huisartsenpost/
+    - titel: Inschrijven als patiënt
+      url: /formulieren/inschrijven/

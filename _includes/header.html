@@ -1,0 +1,52 @@
+{%- assign p = site.data.praktijk -%}
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="logo" href="/">
+      <img src="/assets/img/logo.png" alt="{{ p.naam }} – naar de homepage" width="640" height="327">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hoofdmenu-paneel">
+      <span class="menu-toggle-open">{% include icon.html naam="menu" %}</span>
+      <span class="menu-toggle-dicht">{% include icon.html naam="sluiten" %}</span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <div class="header-rechts" id="hoofdmenu-paneel">
+      <div class="header-top">
+        <a class="knop knop--spoed" href="tel:{{ p.spoed_link }}">
+          {% include icon.html naam="telefoon" %}
+          <span>Spoed bel: {{ p.telefoon }}, kies 1</span>
+        </a>
+        <form class="zoekformulier" role="search" action="/zoeken/" method="get" autocomplete="off">
+          <label class="sr-only" for="zoekveld">Zoeken op de website</label>
+          <input id="zoekveld" class="zoekveld" type="search" name="q" placeholder="Zoeken">
+          <button class="zoekknop" type="submit" aria-label="Zoeken">{% include icon.html naam="zoeken" %}</button>
+          <div class="zoek-suggesties" hidden></div>
+        </form>
+      </div>
+
+      <nav class="hoofdmenu" aria-label="Hoofdmenu">
+        <ul class="menu">
+          <li class="menu-home{% if page.url == '/' %} actief{% endif %}">
+            <a href="/" aria-label="Home">{% include icon.html naam="home" %}<span class="menu-home-tekst">Home</span></a>
+          </li>
+          {%- for item in site.data.menu %}
+          {%- assign lengte = item.url | size -%}
+          {%- assign begin = page.url | slice: 0, lengte -%}
+          <li class="{% if item.sub %}heeft-sub{% endif %}{% if begin == item.url %} actief{% endif %}">
+            <a class="menu-knop" href="{{ item.url }}">{{ item.titel }}{% if item.sub %} {% include icon.html naam="pijl-omlaag" %}{% endif %}</a>
+            {%- if item.sub %}
+            <button class="sub-toggle" type="button" aria-expanded="false" aria-label="Submenu {{ item.titel }} openen">{% include icon.html naam="pijl-omlaag" %}</button>
+            <ul class="submenu">
+              {%- for sub in item.sub %}
+              <li{% if page.url == sub.url %} class="actief"{% endif %}><a href="{{ sub.url }}">{{ sub.titel }}</a></li>
+              {%- endfor %}
+            </ul>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

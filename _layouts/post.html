@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% include hero.html beeld="plaatshouder" %}
+
+<div class="container">
+  {% include hulpmiddelen.html %}
+
+  <article class="artikel" data-voorleestekst>
+    <header class="paginakop">
+      <h1>{{ page.title }}</h1>
+      <p class="meta">{% include datum.html datum=page.date %}</p>
+    </header>
+
+    {%- if page.afbeelding %}
+    <img class="artikel-beeld" src="{{ page.afbeelding }}" alt="">
+    {%- endif %}
+
+    <div class="tekst">
+      {{ content }}
+    </div>
+
+    <p class="knoppenrij">
+      {%- if page.bron %}
+      <a class="knop" href="{{ page.bron }}" target="_blank" rel="noopener">Lees het hele bericht op {{ page.bron_naam | default: "Thuisarts.nl" }} {% include icon.html naam="extern" %}</a>
+      {%- endif %}
+      <a class="knop knop--grijs" href="/nieuws/">Terug naar het nieuwsoverzicht</a>
+    </p>
+  </article>
+</div>

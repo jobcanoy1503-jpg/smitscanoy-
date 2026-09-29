@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------
+# Veelgestelde vragen
+# ---------------------------------------------------------------
+# home: true  -> de vraag staat ook op de homepage
+# Het antwoord mag Markdown bevatten (bijv. **vet** en [link](/contact/)).
+
+- categorie: Afspraken en patiëntenportaal
+  vragen:
+    - vraag: Hoe maak ik een afspraak?
+      home: true
+      antwoord: |
+        Wij vragen u altijd eerst naar de praktijk te bellen voordat u naar de praktijk komt: **0184 – 61 22 68**. De assistente vraagt naar de reden van uw contact. Ze doet dat om zo goed mogelijk een inschatting te maken van de aard en spoedeisendheid van uw klacht. De assistente is (net als de huisarts) verplicht om vertrouwelijk met uw informatie om te gaan.
+
+        Voordat u belt, adviseren wij u eerst eens te kijken op [moetiknaardedokter.nl](https://www.moetiknaardedokter.nl) en [thuisarts.nl](https://www.thuisarts.nl) voor meer informatie en/of te lezen wat u zelf (al) kunt doen.
+    - vraag: Wat kan ik regelen via het patiëntenportaal MijnGezondheid.net?
+      home: true
+      antwoord: |
+        U kunt uw zorg eenvoudig en veilig online regelen. Via [MijnGezondheid.net](https://www.mijngezondheid.net) en de app MedGemak kunt u 24 uur per dag uw medische gegevens inzien, een vraag stellen via een e-consult, herhaalmedicatie aanvragen, uitslagen en specialistenbrieven inzien, zelfmetingen doorgeven en uw afspraken bekijken. U logt in met uw DigiD. [Meer over het patiëntenportaal](/patientenportaal/).
+    - vraag: Hoe vraag ik herhaalmedicatie aan?
+      home: true
+      antwoord: |
+        U kunt uw recepten herhalen door ze rechtstreeks online te bestellen bij de apotheek via het patiëntenportaal [MijnGezondheid.net](https://www.mijngezondheid.net). Ook kunt u zich bij de apotheek aanmelden voor de herhaalservice. [Meer over herhaalrecepten](/herhaalrecept/).
+    - vraag: Hoe krijg ik de uitslag van mijn onderzoek?
+      home: true
+      antwoord: |
+        Uitslagen van urine- en bloedonderzoek kunt u inzien via [MijnGezondheid.net](https://www.mijngezondheid.net). Belt u liever? Voor **uitslagen** kunt u bij voorkeur na 13.00 uur bellen.
+
+- categorie: Dienstverlening
+  vragen:
+    - vraag: Kan ik bij uw praktijk terecht?
+      home: true
+      antwoord: |
+        Ja, wij accepteren nieuwe inschrijvingen. U bent van harte welkom! Vul het [inschrijfformulier](/formulieren/inschrijven/) in. Vanwege de wet dient u zich wel nog persoonlijk te komen legitimeren op de praktijk. Neemt u dan ook a.u.b. uw verzekeringspas mee. U heeft vrije artsenkeuze en daarom vinden wij het belangrijk dat u een weloverwogen beslissing neemt over het kiezen van een huisartsenpraktijk. Wij stimuleren daarom altijd een vrijblijvend kennismakingsgesprek. Soms geven wij aan dat wij graag eerst een kennismakingsgesprek met u willen. U staat dan nog niet officieel bij ons ingeschreven maar komt eerst eens kennismaken om te kijken of de praktijk u bevalt. Hierna kan de inschrijving op uw initiatief officieel gemaakt worden. Tot die tijd blijft uw oude huisarts altijd nog uw huisarts voor medische vragen.
+    - vraag: Bent u altijd bereikbaar?
+      home: true
+      antwoord: |
+        Ja, wij zijn altijd bereikbaar van 8.00 – 17.00 uur. Op een aantal momenten op de dag hebben wij soms alleen de spoedlijn of "urgent, kan niet tot morgen wachten"-lijn open staan, omdat de doktersassistente bijvoorbeeld ruimte moet krijgen om ook haar administratieve taken af te maken (tussen 16.00 en 17.00) of omdat er een belangrijk moment is waarbij alle medewerkers samen overleggen. Wij streven ernaar om dit zo min mogelijk te doen. Maar in geval van krappe bezetting door bijvoorbeeld ziekte, nascholing of vakantie moeten wij hier soms ook tijdens de lunch gebruik van maken.
+
+        Ook zult u wel eens merken dat u helaas niet altijd op elk gewenst tijdstip terecht kunt. Dit heeft te maken met de spreekuurplanning. De huisartsen hebben spreekuur van 8.00 – 10.00 uur, 10.30 – 11.00 uur en van 14.00 – 16.00 uur. De tussenliggende tijd wordt gevuld met visites bij ernstig zieken of invaliden, spoedgevallen, overleg met andere zorgprofessionals en administratie. De doktersassistente probeert samen met u de beste oplossing voor uw hulpvraag te vinden. Om tot de beste oplossing te komen zal zij u vragen stellen. Regelmatig blijkt dat u zelfs al direct aan de telefoon door de doktersassistente geholpen kunt worden, of dat u met uw hulpvraag beter op uw plaats bent bij een van onze andere hulpverleners.
+    - vraag: Hoe lang duurt een consult?
+      home: true
+      antwoord: |
+        Een standaardconsult duurt in principe maximaal 10 minuten. Een dubbelconsult duurt 20 minuten. Dit wordt bepaald door de Nederlandse Zorgautoriteit (NZa). Een consult is niet alleen de tijd dat u daadwerkelijk de hulpverlener ziet; in die tijd moet uw consult ook geregistreerd worden, moet er eventueel overleg gepleegd worden met een andere hulpverlener (bijvoorbeeld een specialist), een verwijsbrief geschreven worden, etc. Wij ervaren deze tijd allen als zeer kort. Dit is niet prettig voor de patiënt, maar ook niet voor de hulpverlener.
+
+        Door mee te doen aan de pilot "meer tijd voor de patiënt" hebben we deze rigide tijden meer los kunnen laten. De patiënt krijgt nu de tijd die nodig is. Hier zit nog wel een limiet aan (4 patiënten per uur), dus wij zullen nog steeds de tijd moeten bewaken. Maar wij merken wel minder uitloop, minder lang wachtende patiënten en in de spreekkamer meer rust en tijd voor de patiënt. Daardoor voelt de patiënt zich meer gehoord en is hij tevredener, en is de hulpverlener ook een stuk ontspannener.
+    - vraag: Ik heb een klacht, waar kan ik die neerleggen?
+      antwoord: |
+        Onder "Formulieren" staat de [klachtenregeling](/formulieren/klachtenregeling/). Wij gaan graag met u in gesprek over uw grieven, klacht of ontevredenheid. Door in gesprek te gaan kunnen we er vaak samen weer uit komen. Dat is goed voor de vertrouwensrelatie. Onbesproken ontevredenheid kan leiden tot meer ontevredenheid zonder dat wij er erg in hebben. Mocht een gesprek niet helpen en u blijft ontevreden, dan kunnen we samen de verdere procedures volgen van de klachtenregeling.
+    - vraag: Hoe komt het dat ik verschillende nieuwe gezichten zie?
+      antwoord: |
+        Ons team bestaat uit 5 vaste huisartsen. Daarnaast is er meestal een huisarts-in-opleiding aanwezig en wordt er af en toe ingevallen door een waarnemer bij afwezigheid door ziekte, scholing en in vakantieperiodes. Wij zijn heel blij dat de zorg aan u daarmee gewoon door kan gaan.
+
+- categorie: Financieel
+  vragen:
+    - vraag: Hoeveel kost een consult?
+      antwoord: |
+        U betaalt in principe zelf niets voor een consult. Wel kan het zijn dat u voor medicijnen, tests of specialistische behandelingen moet betalen, afhankelijk van uw eigen risico. De consulttarieven worden jaarlijks door de Nederlandse Zorgautoriteit bepaald. De huisarts heeft daar geen invloed op. U kunt de tarieven nalezen op de website van de [Nederlandse Zorgautoriteit (NZa)](https://www.nza.nl).
+
+        Loopt het consult uit, dan krijgt de arts altijd maar voor maximaal 20 minuten betaald. Als het nodig is, zien wij u langer.
+    - vraag: Waarom klopt de rekening niet die ik van de zorgverzekeraar krijg?
+      antwoord: |
+        De verzekeraars hanteren soms zeer ingewikkelde vergoedingssystemen. Dit kan betekenen dat de vergoeding die u betaalt weinig te maken heeft met de behandeling of medicijnen die u heeft gekregen. De huisarts vindt dit net zo vervelend als u, maar heeft er weinig tot geen invloed op. Wij raden u aan uw verzekeraar om uitleg te vragen.
+
+- categorie: Medisch
+  vragen:
+    - vraag: Ik ben zwanger, en nu?
+      antwoord: |
+        Tenzij u medische klachten heeft, kunt u het beste eerst contact opnemen met Verloskundigenpraktijk Hardinxveld e.o., [www.verloskundigenhardinxveld.nl](http://www.verloskundigenhardinxveld.nl/).

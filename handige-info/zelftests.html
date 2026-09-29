@@ -1,0 +1,27 @@
+---
+title: Zelftests
+subtitel: Doe een van onderstaande testen
+---
+<ul>
+  <li><a href="#bmi">Is mijn gewicht goed?</a></li>
+  <li><a href="#griep">Heb ik griep?</a></li>
+</ul>
+
+<section class="zelftest" id="bmi">
+  <h2>Is mijn gewicht goed?</h2>
+  <p>Mensen met overgewicht lopen meer kans op gezondheidsproblemen en aandoeningen, zoals hart- en vaatziekten, suikerziekte, hoge bloeddruk, gewrichtsslijtage en sommige soorten kanker. Wat is te zwaar? Dat hangt af van uw gewicht, maar ook van uw lengte. De BMI-calculator hieronder berekent voor volwassenen hun Body Mass Index (BMI).</p>
+  <form id="test-bmi" class="formulier">
+    <div class="velden-2">
+      <div class="veld"><label for="bmi-gewicht">Gewicht (in hele kilo’s)</label><input id="bmi-gewicht" type="number" min="20" max="400" inputmode="numeric"></div>
+      <div class="veld"><label for="bmi-lengte">Lengte (in cm)</label><input id="bmi-lengte" type="number" min="50" max="250" inputmode="numeric"></div>
+    </div>
+    <button class="knop" type="submit">Bereken mijn BMI</button>
+    <div class="uitslag" id="uitslag-bmi" aria-live="polite"></div>
+  </form>
+</section>
+
+<section class="zelftest" id="griep">
+  <h2>Heb ik griep?</h2>
+  <p>Koorts, keelpijn, spierpijn of hoesten: dat is vaak griep. Paracetamol kan helpen. Kijk voor meer informatie over de behandelingen en over de griepprik op Thuisarts.nl.</p>
+  <a class="knop" href="https://www.thuisarts.nl/griep" target="_blank" rel="noopener">Naar griep op Thuisarts.nl {% include icon.html naam="extern" %}</a>
+</section>

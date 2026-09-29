@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------
+# Praktijkgegevens — pas hier aan, dan verandert het op de hele site
+# ---------------------------------------------------------------
+naam: Huisartsenpraktijk Smits & Canoy
+korte_naam: Smits & Canoy
+
+telefoon: "0184 – 61 22 68"
+telefoon_link: "+31184612268"
+
+spoed_tekst: "0184 – 61 22 68, kies 1 in het menu"
+spoed_link: "+31184612268"
+
+huisartsenpost:
+  naam: Centrale Huisartsenpost Gorinchem
+  telefoon: "0183 – 64 64 10"
+  telefoon_link: "+31183646410"
+
+adres:
+  straat: Peulenstraat 130
+  postcode_plaats: 3371 AR Hardinxveld-Giessendam
+  kaart: "https://www.google.com/maps/search/?api=1&query=Peulenstraat+130+3371+AR+Hardinxveld-Giessendam"
+
+gezondheidscentrum:
+  naam: Gezondheidscentrum Hardinxveld-Giessendam
+  url: "https://www.gezondheidscentrum-hardinxveld-giessendam.nl/"
+
+# Patiëntenportaal
+portaal:
+  naam: MijnGezondheid.net
+  url: "https://www.mijngezondheid.net"
+  app: MedGemak
+
+openingstijden:
+  - dag: Maandag
+    tijd: "08:00 t/m 17:00"
+  - dag: Dinsdag
+    tijd: "08:00 t/m 17:00"
+  - dag: Woensdag
+    tijd: "08:00 t/m 17:00"
+  - dag: Donderdag
+    tijd: "08:00 t/m 17:00"
+  - dag: Vrijdag
+    tijd: "08:00 t/m 17:00"
+  - dag: Zaterdag
+    tijd: Gesloten
+  - dag: Zondag
+    tijd: Gesloten
+
+belafspraken:
+  - "Graag voor <strong>visites</strong> vóór 10.30 uur bellen."
+  - "Voor <strong>uitslagen</strong> bij voorkeur na 13.00 uur bellen."

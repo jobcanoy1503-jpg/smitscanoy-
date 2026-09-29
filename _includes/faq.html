@@ -1,0 +1,31 @@
+{%- comment -%}
+  Veelgestelde vragen (uit _data/faq.yml)
+  Parameters: titel, alleen_home (true = alleen vragen met home: true),
+              knop (true = knop "Bekijk alle vragen"), categorieen (true = kopjes per categorie)
+{%- endcomment -%}
+<section class="sectie faq" aria-label="Veelgestelde vragen">
+  {%- if include.titel %}
+  <h2 class="sectie-titel">{{ include.titel }}</h2>
+  <p class="sectie-intro">Deze veelgestelde vragen zijn samengesteld op basis van vragen die wij vaak krijgen. Staat het antwoord op uw vraag er niet bij? Stel uw vraag dan via een <a href="{{ site.data.praktijk.portaal.url }}" target="_blank" rel="noopener">e-consult</a> of bel ons op {{ site.data.praktijk.telefoon }}.</p>
+  {%- endif %}
+
+  {%- for groep in site.data.faq %}
+  {%- if include.categorieen %}
+  <h3 class="faq-categorie">{{ groep.categorie }}</h3>
+  {%- endif %}
+  <div class="accordeon">
+    {%- for item in groep.vragen %}
+    {%- if include.alleen_home != true or item.home %}
+    <details class="accordeon-item">
+      <summary>{{ item.vraag }}</summary>
+      <div class="accordeon-inhoud">{{ item.antwoord | markdownify }}</div>
+    </details>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+  {%- endfor %}
+
+  {%- if include.knop %}
+  <p class="rechts"><a class="knop" href="/handige-info/veelgestelde-vragen/">Bekijk alle vragen</a></p>
+  {%- endif %}
+</section>

@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /zoekindex.json
+---
+[
+{%- assign eerste = true -%}
+{%- for p in site.pages -%}
+  {%- if p.title and p.zoeken != false -%}
+  {%- unless eerste %},{% endunless -%}
+  {%- assign eerste = false -%}
+  {%- assign stukken = p.url | split: "/" -%}
+  {%- assign sectie_url = "/" | append: stukken[1] | append: "/" -%}
+  {%- capture sectie -%}{% for item in site.data.menu %}{% if item.url == sectie_url and item.url != p.url %}{{ item.titel }}{% endif %}{% endfor %}{%- endcapture -%}
+  {"titel": {{ p.title | jsonify }}, "url": {{ p.url | jsonify }}, "sectie": {{ sectie | default: "Pagina" | jsonify }}, "tekst": {{ p.content | strip_html | normalize_whitespace | truncate: 3000 | jsonify }}}
+  {%- endif -%}
+{%- endfor -%}
+{%- for p in site.posts -%}
+  ,{"titel": {{ p.title | jsonify }}, "url": {{ p.url | jsonify }}, "sectie": "Nieuws", "tekst": {{ p.content | strip_html | normalize_whitespace | jsonify }}}
+{%- endfor -%}
+{%- for groep in site.data.faq -%}{%- for item in groep.vragen -%}
+  ,{"titel": {{ item.vraag | jsonify }}, "url": "/handige-info/veelgestelde-vragen/", "sectie": "Veelgestelde vragen", "tekst": {{ item.antwoord | markdownify | strip_html | normalize_whitespace | jsonify }}}
+{%- endfor -%}{%- endfor -%}
+]

@@ -1,0 +1,73 @@
+---
+title: Contact met de huisartsenpraktijk
+subtitel: Hieronder vindt u een overzicht van alle manieren om met ons in contact te komen
+hero: false
+faq: true
+praktijkinfo: false
+---
+{%- assign p = site.data.praktijk -%}
+<div class="blok-lijst">
+  <details class="blok" open>
+    <summary>Een afspraak maken</summary>
+    <div class="blok-inhoud">
+      <p>Wij vragen u altijd eerst naar de praktijk te bellen voordat u naar de praktijk komt. De assistente vraagt naar de reden van uw contact, om zo goed mogelijk in te schatten welke zorg u nodig heeft en hoe snel. De assistente is (net als de huisarts) verplicht om vertrouwelijk met uw informatie om te gaan. Graag voor visites vóór 10.30 uur bellen.</p>
+      <a class="knop knop--wit" href="tel:{{ p.telefoon_link }}">Bel {{ p.telefoon }}</a>
+    </div>
+  </details>
+
+  <details class="blok">
+    <summary>Een vraag stellen via e-consult <a class="knop knop--wit" href="{{ p.portaal.url }}" target="_blank" rel="noopener">Stuur een e-consult</a></summary>
+    <div class="blok-inhoud">
+      <p>Voor medische vragen die niet spoedeisend zijn, kunt u een e-consult sturen via het patiëntenportaal MijnGezondheid.net. U logt in met uw DigiD. <a href="/patientenportaal/">Meer over het patiëntenportaal</a>.</p>
+    </div>
+  </details>
+
+  <details class="blok">
+    <summary>Herhaalrecept aanvragen <a class="knop knop--wit" href="/herhaalrecept/">Herhaalrecept</a></summary>
+    <div class="blok-inhoud">
+      <p>Herhaalmedicatie vraagt u rechtstreeks aan bij de apotheek via MijnGezondheid.net. U kunt uw recepten niet meer herhalen via onze website.</p>
+    </div>
+  </details>
+
+  <details class="blok">
+    <summary>Uitslagen opvragen <a class="knop knop--wit" href="{{ p.portaal.url }}" target="_blank" rel="noopener">Bekijk uitslagen</a></summary>
+    <div class="blok-inhoud">
+      <p>Uitslagen van urine- en bloedonderzoek ziet u in MijnGezondheid.net. Belt u liever? Voor uitslagen kunt u bij voorkeur na 13.00 uur bellen.</p>
+    </div>
+  </details>
+
+  <details class="blok">
+    <summary>Avond, nacht en weekend <a class="knop knop--wit" href="tel:{{ p.huisartsenpost.telefoon_link }}">Bel {{ p.huisartsenpost.telefoon }}</a></summary>
+    <div class="blok-inhoud">
+      <p>Voor spoedeisende medische problemen die niet tot de volgende werkdag kunnen wachten, belt u de {{ p.huisartsenpost.naam }}: {{ p.huisartsenpost.telefoon }}. <a href="/handige-info/huisartsenpost/">Meer over de huisartsenpost</a>.</p>
+    </div>
+  </details>
+
+  <details class="blok blok--spoed">
+    <summary>SPOED <a class="knop knop--wit" href="tel:{{ p.spoed_link }}">Bel nu met spoed: {{ p.telefoon }}, kies 1</a></summary>
+    <div class="blok-inhoud">
+      <p>Heeft u overdag spoed? Bel {{ p.spoed_tekst }}. Bij levensbedreigende situaties belt u direct <a href="tel:112"><strong>112</strong></a>.</p>
+    </div>
+  </details>
+</div>
+
+<div class="kolommen">
+  <div>
+    <h3>Contactgegevens</h3>
+    <p>{{ p.naam }}<br>{{ p.adres.straat }}<br>{{ p.adres.postcode_plaats }}</p>
+    <p class="knoppenrij">
+      <a class="knop knop--klein" href="tel:{{ p.telefoon_link }}">Praktijk bellen {{ p.telefoon }}</a>
+      <a class="knop knop--klein" href="{{ p.adres.kaart }}" target="_blank" rel="noopener">Kaart tonen</a>
+    </p>
+  </div>
+  <div>
+    <h3>Openingstijden</h3>
+    <table class="tijden">
+      <tbody>
+        {%- for regel in p.openingstijden %}
+        <tr><th scope="row">{{ regel.dag }}</th><td>{{ regel.tijd }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

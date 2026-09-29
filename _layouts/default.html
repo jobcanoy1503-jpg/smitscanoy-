@@ -1,0 +1,44 @@
+<!doctype html>
+{%- comment -%}
+  Alle links in de site worden geschreven als "/pagina/". Onderaan deze
+  layout wordt daar automatisch de baseurl voor gezet, zodat de site zowel
+  op GitHub Pages (met /smitscanoy) als op een eigen domein werkt.
+{%- endcomment -%}
+{%- capture base_href -%}href="{{ site.baseurl }}/{%- endcapture -%}
+{%- capture base_src -%}src="{{ site.baseurl }}/{%- endcapture -%}
+{%- capture base_action -%}action="{{ site.baseurl }}/{%- endcapture -%}
+{%- capture pagina -%}
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if page.title and page.url != "/" %}
+  <title>{{ page.title }} | {{ site.data.praktijk.naam }}</title>
+  {%- else %}
+  <title>{{ site.data.praktijk.naam }} | Hardinxveld-Giessendam</title>
+  {%- endif %}
+  <meta name="description" content="{{ page.beschrijving | default: page.subtitel | default: site.description | strip_newlines | escape }}">
+  <meta name="theme-color" content="#579941">
+  {%- unless site.zichtbaar_in_zoekmachines %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endunless %}
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/barlow-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: "%s" }}">
+  <script>window.SITE_BASE = "{{ site.baseurl }}";</script>
+  <script src="/assets/js/main.js?v={{ site.time | date: "%s" }}" defer></script>
+</head>
+<body class="{{ page.body_class | default: 'subpagina' }}">
+  <a class="skiplink" href="#inhoud">Direct naar de inhoud</a>
+  {% include header.html %}
+
+  <main id="inhoud">
+    {{ content }}
+  </main>
+
+  {% unless page.praktijkinfo == false %}{% include praktijkinfo.html %}{% endunless %}
+  {% include footer.html %}
+</body>
+</html>
+{%- endcapture -%}
+{{ pagina | replace: 'href="/', base_href | replace: 'src="/', base_src | replace: 'action="/', base_action }}

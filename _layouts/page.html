@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% include hero.html %}
+
+<div class="container">
+  {% include hulpmiddelen.html %}
+
+  <article class="artikel" data-voorleestekst>
+    <header class="paginakop">
+      <h1>{{ page.title }}</h1>
+      {%- if page.subtitel %}
+      <p class="subtitel">{{ page.subtitel }}</p>
+      {%- endif %}
+    </header>
+
+    <div class="tekst">
+      {{ content }}
+    </div>
+  </article>
+
+  {%- if page.submenu %}
+  {%- for item in site.data.menu %}
+  {%- if item.url == page.submenu %}
+  <nav class="tegels" aria-label="{{ item.titel }}">
+    {%- for sub in item.sub %}
+    <a class="tegel" href="{{ sub.url }}"><span>{{ sub.titel }}</span></a>
+    {%- endfor %}
+  </nav>
+  {%- endif %}
+  {%- endfor %}
+  {%- endif %}
+
+  {%- if page.faq %}
+  {% include faq.html titel="Veelgestelde vragen" alleen_home=true knop=true %}
+  {%- endif %}
+</div>
