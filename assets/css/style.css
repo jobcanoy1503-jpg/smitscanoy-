@@ -11,9 +11,10 @@
 @font-face { font-family: "Open Sans"; font-weight: 300 800; font-style: normal; font-display: swap; src: url("../fonts/open-sans.woff2") format("woff2"); }
 
 :root {
-  --groen: #579941;          /* huisstijlgroen: koppen, groen blok bovenaan */
-  --groen-knop: #478535;     /* knoppen en links (iets donkerder, beter leesbaar) */
-  --groen-donker: #1d4c1f;   /* hover, footer, donkere blokken */
+  --groen: #51ba20;          /* huisstijlgroen (appeltjesgroen 4144): koppen, groene vlakken */
+  --groen-knop: #51ba20;     /* knoppen en menu */
+  --groen-tekst: #2c8410;    /* links in de tekst (iets donkerder, beter leesbaar) */
+  --groen-donker: #245a10;   /* hover */
   --groen-licht: #93cc57;    /* accenten */
   --groen-zacht: #eef6e8;    /* lichte achtergrond */
   --rood: #a52929;           /* spoed */
@@ -46,7 +47,7 @@ body {
   overflow-x: hidden;
 }
 img { max-width: 100%; height: auto; display: block; }
-a { color: var(--groen-knop); text-decoration: none; }
+a { color: var(--groen-tekst); text-decoration: none; }
 a:hover { color: var(--groen-donker); text-decoration: underline; }
 h1, h2, h3, h4 { font-family: var(--font); line-height: 1.15; margin: 0 0 .5em; }
 h1 { font-size: 3.125rem; font-weight: 700; color: var(--groen); }
@@ -195,7 +196,7 @@ ul, ol { padding-left: 1.3em; }
   display: block;
   background-color: var(--groen-zacht);
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath fill='%23579941' fill-opacity='.10' d='M52 36h16v16h16v16H68v16H52V68H36V52h16z'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath fill='%2351ba20' fill-opacity='.10' d='M52 36h16v16h16v16H68v16H52V68H36V52h16z'/%3E%3C/svg%3E"),
     linear-gradient(120deg, #dcedd0 0%, #eef6e8 45%, #cfe6bd 100%);
   background-size: 120px 120px, cover;
 }
@@ -260,7 +261,7 @@ ul, ol { padding-left: 1.3em; }
 /* ---------- Secties ---------- */
 .sectie { margin: 0 0 60px; }
 .sectie-titel { margin-bottom: .2em; }
-.sectie-subtitel { font-size: 1.125rem; color: var(--groen); margin-bottom: 30px; }
+.sectie-subtitel { font-size: 1.125rem; color: var(--groen-tekst); margin-bottom: 30px; }
 .sectie-intro { margin-bottom: 30px; }
 
 /* Nieuws */
@@ -296,13 +297,13 @@ ul, ol { padding-left: 1.3em; }
 .accordeon-item summary::-webkit-details-marker { display: none; }
 .accordeon-item summary::after { content: ""; flex: none; border: 6px solid transparent; border-top: 7px solid var(--tekst); border-bottom: 0; transition: transform .2s; }
 .accordeon-item[open] summary::after { transform: rotate(180deg); }
-.accordeon-item summary:hover { color: var(--groen-knop); }
+.accordeon-item summary:hover { color: var(--groen-tekst); }
 .accordeon-inhoud { padding: 0 20px 14px; }
 
 /* Donkere blokken (contactpagina) */
 .blok-lijst { display: flex; flex-direction: column; gap: 14px; margin: 0 0 40px; }
 .blok {
-  background: var(--groen-donker); color: var(--wit);
+  background: var(--groen); color: var(--wit);
   border-radius: 50px; padding: 0 30px;
 }
 .blok--spoed { background: var(--rood); }
@@ -319,7 +320,7 @@ ul, ol { padding-left: 1.3em; }
 .blok-inhoud { padding: 0 0 28px; }
 .blok a:not(.knop) { color: var(--wit); text-decoration: underline; }
 .blok .knop--wit { color: #000; }
-.blok .knop--wit:hover { background: var(--groen-licht); color: #000; }
+.blok .knop--wit:hover { background: var(--groen-donker); color: var(--wit); }
 .blok--spoed .knop--wit { color: var(--rood); }
 
 /* Tegels (overzichtspagina's) */
@@ -372,14 +373,14 @@ ul, ol { padding-left: 1.3em; }
 .footer-balk {
   width: 80%;
   max-width: 1140px;
-  background: var(--groen-donker);
+  background: var(--groen);
   color: var(--wit);
   border-radius: 0 50px 50px 0;
   padding: 20px 40px;
   font-size: 1rem;
 }
 .footer-balk a { color: var(--wit); font-weight: 500; }
-.footer-balk a:hover { color: var(--groen-licht); }
+.footer-balk a:hover { color: var(--wit); }
 
 /* ---------- Formulieren (zelftests, inschrijfformulier) ---------- */
 .formulier fieldset { border: 0; padding: 0; margin: 0 0 28px; }
